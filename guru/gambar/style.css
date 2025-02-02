@@ -1,0 +1,103 @@
+/* Kontainer untuk galeri gambar diubah menjadi kolom vertikal */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Tampilan galeri item tetap sama */
+.gallery-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Atur gambar agar tetap dalam batas yang wajar */
+.gallery-item img {
+    width: 100%;
+    max-width: 900px;
+    /* Batas maksimal gambar */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    padding: 5px 20px;
+    margin: 12px 2px 4px 2px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.20rem;
+    box-shadow: 2px 2px 4px 4px rgb(41, 41, 41);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Tombol aksi di bawah gambar tetap sama */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.add-btn {
+    font-size: 14px;
+    background-color: #458a5f;
+    border-radius: 8px;
+    border: 2px solid rgba(90, 81, 81, 0.2);
+    cursor: pointer;
+    margin: 8px;
+    box-shadow: 2px 4px 8px 2px rgba(116, 255, 153, 0.568);
+}
+
+.add-btn:hover {
+    color: white;
+    background-color: #027b34b9;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+}
+
+.edit-btn {
+    color: white;
+    background-color: #b98004;
+}
+
+.edit-btn:hover {
+    color: #5c5c00;
+    background-color: #4a4a00;
+}
+
+.delete-btn {
+    background-color: #b9044a;
+}
+
+.delete-btn:hover {
+    color: red;
+    background-color: rgb(147, 0, 0);
+}
+
+/* Deskripsi gambar tetap */
+.description {
+    color: #555;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 12px 0px;
+}

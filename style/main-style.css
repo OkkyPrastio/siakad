@@ -1,0 +1,226 @@
+/* Mereset margin dan padding default, serta mengecilkan jarak antar huruf */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    /* Pastikan body memenuhi tinggi layar */
+    overflow-y: auto;
+    /* Untuk mengontrol scroll vertikal */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    /* Selalu isi seluruh tinggi viewport */
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 0;
+    /* Pastikan tidak ada margin bawah */
+}
+
+.container h2 {
+    user-select: none;
+    color: black;
+    text-shadow: 2px -1px 2px purple;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 20px;
+    margin: 0px 2px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+    box-shadow: 2px 2px 4px 4px rgb(41, 41, 41);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.container .control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.add-btn,
+.search-btn,
+.refresh-btn {
+    font-size: 14px;
+    background-color: #458a5f;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 8px;
+    box-shadow: 0px 4px 8px 0px rgba(26, 24, 24, 0.568);
+}
+
+.add-btn:hover,
+.search-btn:hover,
+.refresh-btn:hover {
+    color: white;
+    background-color: #027b34b9;
+}
+
+.search-input {
+    width: 250px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 3px solid #025826b9;
+    margin: 0px 12px;
+    box-shadow: 0px 4px 8px 0px rgba(26, 24, 24, 0.568);
+}
+
+.search-input:hover {
+    border: 4px solid #025826b9;
+}
+
+.select-option {
+    background-color: #104e82;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 8px;
+    box-shadow: 0px 4px 8px 0px rgba(26, 24, 24, 0.568);
+
+    padding: 4px 15px;
+    margin: 0px 4px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.select-option:hover {
+    background-color: #2b7bbb;
+    color: white;
+}
+
+.table-wrapper {
+    max-height: 630px;
+    width: 100%;
+    overflow-y: scroll;
+    border-radius: 8px;
+    min-height: 100%;
+    /* Tambahkan untuk memastikan konten merentang */
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #b9044a;
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    table-layout: auto;
+}
+
+.header-row {
+    padding: 18px 0px;
+    background-color: #1d639c;
+    position: sticky;
+    top: 0px;
+    user-select: none;
+}
+
+table tr th {
+    letter-spacing: 1px;
+    padding: 10px 10px 10px 16px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+table tr:not(.header-row) {
+    background-color: #d1d1d1;
+    color: black;
+}
+
+table tr th.action-header {
+    text-align: center;
+    width: 120px;
+}
+
+/* huruf dalam tabel */
+table tr td {
+    font-size: 14px;
+    color: black;
+    /* Jarak di dlm tabel */
+    padding: 8px 4px;
+    text-align: center;
+    /* Jarak antar kata */
+    word-spacing: 2px;
+    font-weight: bold;
+}
+
+table tr td:hover {
+    color: white;
+    border-radius: 8px;
+    background-color: #405c83;
+}
+
+table tr td.action {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+}
+
+.edit-btn {
+    color: white;
+    background-color: #b98004;
+}
+
+.edit-btn:hover {
+    color: #5c5c00;
+    background-color: #4a4a00;
+}
+
+.delete-btn {
+    background-color: #b9044a;
+}
+
+.delete-btn:hover {
+    color: red;
+    background-color: rgb(147, 0, 0);
+}

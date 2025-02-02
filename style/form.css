@@ -1,0 +1,186 @@
+/* Reset default box-sizing untuk semua elemen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: -12px;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input dan elemen select untuk berbagai jenis input */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    /* Pastikan semua input memiliki panjang yang sama */
+    background-color: #f9f9f9;
+    text-align: left;
+    /* Teks dalam input tetap rata kiri */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Tombol utama */
+button {
+    color: white;
+    padding: 10px 16px;
+    /* Konsisten padding */
+    margin: 8px 0px;
+    /* Konsisten margin */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 3px 3px 5px rgb(41, 41, 41);
+    /* Shadow lebih natural */
+}
+
+/* Efek pada tombol saat di-click */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Grup form dengan dua kolom */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group label {
+    color: #555555;
+    font-size: 16px;
+    white-space: nowrap;
+    margin: 8px 0px 0px 0px;
+    /* margin: top right button left; */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 75%;
+}
+
+/* Container untuk tombol refresh agar posisinya di kanan */
+.top-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    /* Posisikan tombol refresh di kanan */
+
+    margin-bottom: 20px;
+    /* Jarak antara tombol refresh dan form */
+}
+
+/* Tombol refresh dengan styling */
+.refresh-btn {
+    background-color: #1663ac;
+    color: white;
+    padding: 10px 14px;
+    margin: 0px 0px 24px 90%;
+    border: none;
+    cursor: pointer;
+}
+
+.refresh-btn:hover {
+    background-color: #12528e;
+}
+
+.save-btn {
+    background-color: #218838;
+}
+
+.save-btn:hover {
+    background-color: #19682a;
+}
+
+/* Tombol kembali dengan warna berbeda */
+.back-btn {
+    background-color: rgb(197, 0, 0);
+}
+
+/* Hover state untuk tombol kembali */
+.back-btn:hover {
+    background-color: rgb(156, 0, 0);
+}
+
+/* Styling untuk input time dengan class select-time */
+.form-group.select-time {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    color: #333;
+}
+
+/* Fokus input untuk memberikan efek border dan shadow */
+.form-group.select-time:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+    background-color: #fff;
+}
+
+/* Hover state untuk select-time */
+.form-group.select-time:hover {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.3);
+    background-color: #f1f1f1;
+}

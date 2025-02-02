@@ -1,0 +1,146 @@
+/* form-style.css */
+
+/* Tambahan untuk container tombol refresh di bagian atas */
+.top-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+/* Container untuk tombol di bagian bawah */
+.bottom-btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Reset default box-sizing untuk semua elemen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input dan elemen select untuk berbagai jenis input */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="file"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Tombol utama */
+button {
+    color: white;
+    padding: 10px 16px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 3px 3px 5px rgb(41, 41, 41);
+}
+
+/* Efek pada tombol saat di-click */
+button:active {
+    transform: scale(0.95);
+}
+
+.form-group label {
+    color: #555555;
+    font-size: 16px;
+    white-space: nowrap;
+    margin: 8px 0px 0px 0px;
+}
+
+/* Tombol refresh dengan styling */
+.refresh-btn {
+    background-color: #1663ac;
+    color: white;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.refresh-btn:hover {
+    background-color: #12528e;
+}
+
+.save-btn {
+    background-color: #218838;
+}
+
+.save-btn:hover {
+    background-color: #19682a;
+}
+
+/* Tombol kembali dengan warna berbeda */
+.back-btn {
+    background-color: rgb(197, 0, 0);
+}
+
+/* Hover state untuk tombol kembali */
+.back-btn:hover {
+    background-color: rgb(156, 0, 0);
+}
