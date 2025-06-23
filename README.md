@@ -9,6 +9,10 @@ Wahyu Okky Prastio
 
 
 Demo : https://siakad-okky.infinityfreeapp.com/tu/dashboard.php#
+Demo Akun :
+  - username : siswa
+  - password : siswa
+
 
 # 📘 SIAKAD – Sistem Informasi Akademik Sekolah
 
