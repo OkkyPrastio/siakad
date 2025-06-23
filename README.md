@@ -1,7 +1,13 @@
 👨‍💻 Pengembang
 Wahyu Okky Prastio
 
-📧 Email: okkyprastio0210@gmail.com  |  💼 LinkedIn: https://www.linkedin.com/in/wahyu-okky-prastio-b5b637250/  |  📁 Portofolio: https://github.com/OkkyPrastio
+📧 Email: okkyprastio0210@gmail.com
+
+💼 LinkedIn: https://www.linkedin.com/in/wahyu-okky-prastio-b5b637250/
+
+📁 Portofolio: https://github.com/OkkyPrastio
+
+
 Demo : https://siakad-okky.infinityfreeapp.com/tu/dashboard.php#
 
 # 📘 SIAKAD – Sistem Informasi Akademik Sekolah
