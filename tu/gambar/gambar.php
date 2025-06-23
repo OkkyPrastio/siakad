@@ -32,8 +32,8 @@ $gambar = query("SELECT * FROM gambar");
             <?php foreach ($gambar as $g): ?>
                 <div class="gallery-item">
                     <!-- Membungkus gambar dengan link untuk membuka gambar penuh -->
-                    <a href="uploads/<?= htmlspecialchars($g['nama_gambar']); ?>" target="_blank">
-                        <img src="uploads/<?= htmlspecialchars($g['nama_gambar']); ?>" alt="Gambar">
+                    <a href="../../uploads/<?= htmlspecialchars($g['nama_gambar']); ?>" target="_blank">
+                        <img src="../../uploads/<?= htmlspecialchars($g['nama_gambar']); ?>" alt="Gambar">
                     </a>
 
                     <div class="description">
